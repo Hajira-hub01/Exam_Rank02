@@ -1,7 +1,7 @@
 #include <unistd.h>
-/*
-    much more simple way to do it : )
-*/
+
+// Not sure if it works with grademe.. but it is simpler
+
 int	ft_atoi_base(const char *str, int str_base)
 {
     int sign = 1;

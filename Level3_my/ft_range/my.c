@@ -43,3 +43,11 @@ int main()
     free(arr);
     return (0);
 }
+
+// int main(void)
+// {
+//     int *n = ft_range(1, 3);
+//     printf("%d\n", n[0]);
+//     printf("%d\n", n[1]);
+//     printf("%d\n", n[2]);
+// }

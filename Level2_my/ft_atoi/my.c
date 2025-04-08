@@ -1,25 +1,51 @@
- #include <stdlib.h>
- #include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+// WAY - 1
 
 int	ft_atoi(const char *str)
 {
-    int  sign = 1;
+    int sign = 1;
     int num = 0;
-    while (*str == ' ' || *str >= 9 && *str <= 13)
-        str++;
-    if (*str == '-' || *str == '+')
+    int i = 0;
+
+    while (str[i] == ' ' || str[i] >= 9 && str[i] <= 13)
+        i++;
+    if (str[i] == '-' || str[i] == '+')
     {
-        if (*str == '-')
+        if (str[i] == '-')
             sign *= -1;
-        str++;
-    }    
-    while (*str >= '0' && *str <= '9')
+        i++;
+    }
+    while (str[i] >= '0' && str[i] <= '9')
     {
-        num = num * 10 + *str - '0';
-        str++;
+        num = num * 10 + str[i] - '0';
+        i++;
     }
     return (num * sign);
 }
+// WAY - 2
+
+// int	ft_atoi(const char *str)
+// {
+//     int  sign = 1;
+//     int num = 0;
+//     while (*str == ' ' || *str >= 9 && *str <= 13)
+//         str++;
+//     if (*str == '-' || *str == '+')
+//     {
+//         if (*str == '-')
+//             sign *= -1;
+//         str++;
+//     }    
+//     while (*str >= '0' && *str <= '9')
+//     {
+//         num = num * 10 + *str - '0';
+//         str++;
+//     }
+//     return (num * sign);
+// }
+
 int main(void)
 {
     char str1[] = "1234";

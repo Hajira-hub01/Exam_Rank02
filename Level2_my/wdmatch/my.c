@@ -4,6 +4,7 @@ int main (int ac, char **av)
 {
     int i = 0;
     int j = 0;
+    
     if (ac == 3)
     {
         while (av[2][j])

@@ -1,5 +1,6 @@
 #include <unistd.h>
-// I am not sure if it work with grademe, or in every cases 
+
+// I am not sure if it works with grademe, or in every cases 
 
 void epur_str(char *str)
 {

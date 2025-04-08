@@ -1,6 +1,5 @@
 #include "flood_fill.h"
 
-
 void	fill(char **tab, t_point size, int x, int y, char to_fill)
 {
 	if (x < 0 || x >= size.x || y < 0 || y >= size.y || tab[y][x] != to_fill)

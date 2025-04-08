@@ -41,7 +41,15 @@ int main()
         printf("%d ", arr[i]);
     printf("\n");
 
-    free(arr);  // Free allocated memory
+    free(arr);
     return (0);
 }
 
+// int main(void)
+// {
+//     int *res = ft_rrange(-1, 2);
+//     printf("%d\n", res[0]);
+//     printf("%d\n", res[1]);
+//     printf("%d\n", res[2]);
+//     printf("%d\n", res[3]);
+// }

@@ -1,5 +1,7 @@
 #include <unistd.h>
 
+//function
+
 void	rotone(char *s)
 {
     int i;
